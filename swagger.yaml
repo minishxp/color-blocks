@@ -12,8 +12,6 @@ tags:
 - name: "Names"
   description: "Objects detected and used via their names"
 schemes:
-- "https"
-- "http"
 paths:
   DamageBlock:
     post:
@@ -22,6 +20,12 @@ paths:
       summary: "Damages the player. "
       description: "Damages a player on contact. (1) argument."
       operationId: "DamageBlock"
+      parameters:
+        - in: path
+          name: DamageMulti
+          type: integer
+          required: true
+          description: A multiplier for the default 50 damage taken upon touch.
   
 definitions:
   ApiResponse:
@@ -35,5 +39,5 @@ definitions:
       message:
         type: "string"
 externalDocs:
-  description: "Find out more about Swagger"
-  url: "http://swagger.io"
+  description: "the community - Website"
+  url: "https://discord.gg/byWYcdK7wb"
