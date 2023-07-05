@@ -17,5 +17,9 @@ window.onload = function() {
     supportedSubmitMethods: []
   });
 
+  setTimeout(function() {
+    console.log("QUARK LOGO!!!")
+    document.getElementsByClassName("topbar-wrapper").item(0).childNodes.item(0).childNodes.item(0).src = ""
+  }, 1000)
   //</editor-fold>
 };
